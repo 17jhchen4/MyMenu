@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+
+
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="TextView"-->
+            <!--/>-->
+            <!--</ScrollView>-->
+
+
+            <!--<ListView-->
+            <!--android:id="@+id/list1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:divider="#000"-->
+            <!--android:dividerHeight="2px"-->
+            <!--android:headerDividersEnabled="false">-->
+
+            <!--</ListView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_caipu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="菜谱分类"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/button_shicai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="食材大全"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/button_zhuanti"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="专题"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/button_caidan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="菜单"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:hint="搜索菜谱、食材或专题"
+                    android:inputType="textPersonName"
+                    android:padding="20dp"
+                    android:singleLine="true"
+                    android:textSize="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/button_sousuo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/background_light"
+                    android:text="点击搜索"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:typeface="sans"/>
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

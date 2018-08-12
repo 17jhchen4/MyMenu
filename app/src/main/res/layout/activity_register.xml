@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView_tit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="My"
+        android:paddingTop="40dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textView_tit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ヽ(￣ω￣(￣ω￣〃)ゝ          "
+        android:textAlignment="textEnd"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textView_Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="---->by 原点君         "
+        android:textAlignment="textEnd"
+        android:textColor="#0e47f4"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  请输入您的用户名"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="      请输入您的密码"/>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="      请确认您的密码"/>
+
+        <EditText
+            android:id="@+id/register_password2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="确定"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>
